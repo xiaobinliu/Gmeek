@@ -18,12 +18,14 @@ if("{{ blogBase['startSite'] }}"!=""){
     document.getElementById("year").innerHTML=now.getFullYear();
     //if("{{ blogBase['filingNum'] }}"!=""){
       //  document.getElementById("runday").innerHTML=" • "+"{{ i18n['run'] }}"+diffDay+"{{ i18n['days'] }}"+" • ";}
-    //else{
-    document.getElementById("runday").innerHTML="{{ i18n['run'] }}"+diffDay+"{{ i18n['days'] }}"+" • ";//}
-    diffDay=diffDay-15*365;
+    //else{ 
+    
     document.getElementById("nojobday").innerHTML= "{{ i18n['nojob'] }}"+diffDay+"{{ i18n['days'] }}"+" • ";
+    diffDay=diffDay-15*365;
+    document.getElementById("runday").innerHTML="{{ i18n['run'] }}"+diffDay+"{{ i18n['days'] }}"+" • ";//}
+   
     diffDay=diffDay+34*365;
-    document.getElementById("ocdday").innerHTML= "{{ i18n['ocd'] }}"+diffDay+"{{ i18n['days'] }}"+" • ";
+    document.getElementById("ocdday").innerHTML= "{{ i18n['ocd'] }}"+diffDay+"{{ i18n['days'] }}";
 }
 </script>
 
